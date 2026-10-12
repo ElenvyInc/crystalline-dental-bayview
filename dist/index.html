@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#073f47">
+  <meta name="theme-color" content="#a8e6df">
   <meta name="description" content="A website concept for Crystalline Dental's future Bayview Village location in North York.">
   <title>Crystalline Dental — Bayview Village</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23073f47'/%3E%3Cpath d='M32 11 43 24 32 53 21 24Z' fill='%2363d7d0'/%3E%3Cpath d='m21 24 11 7 11-7M32 11v20' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
@@ -256,6 +256,73 @@
     /* --- Scroll reveal: sections rise into view --- */
     .reveal{opacity:0;transform:translateY(26px) scale(.995)}
     .reveal.in{opacity:1;transform:none}
+
+    /* ==== Gel layer (2026-10-12): lighter background + dynamic jelly finish.
+       Builds on the polish layer. Presentation only — logo, structure, and content unchanged. ==== */
+    /* --- Bright, living page background: soft gel blobs drifting behind everything --- */
+    body{background-color:#fdffff;background-image:radial-gradient(560px 420px at 8% 12%,rgba(143,211,205,.34),transparent 70%),radial-gradient(640px 480px at 92% 22%,rgba(140,225,235,.30),transparent 70%),radial-gradient(700px 520px at 50% 88%,rgba(168,240,225,.32),transparent 70%),linear-gradient(180deg,#ffffff,#f4fbfa 55%,#eefaf7);background-size:130% 130%,130% 130%,130% 130%,100% 100%;background-attachment:fixed;animation:gelDrift 22s ease-in-out infinite alternate}
+    @keyframes gelDrift{from{background-position:0% 0%,100% 0%,50% 100%,0 0}to{background-position:12% 8%,88% 12%,44% 92%,0 0}}
+    .section-soft{background:linear-gradient(180deg,rgba(230,248,245,.85),rgba(240,250,248,.65))}
+    /* --- The two dark sections become bright aqua gel --- */
+    .section-dark{background:linear-gradient(150deg,#eafaf6 0%,#d7f3ef 48%,#e8fbf8 100%);background-size:180% 180%;animation:heroPan 14s ease-in-out infinite alternate;color:var(--ink)}
+    .section-dark .eyebrow{color:var(--deep-2)!important}
+    .section-dark .section-head h2,.section-dark .faq-intro h2{color:var(--deep)!important}
+    .section-dark .section-head p{color:#47696e!important}
+    .section-dark .faq-intro p{color:#47696e}
+    .trust-intro{background:linear-gradient(150deg,#bfe9e4,#8fd3cd);color:var(--deep)}
+    .trust-intro span{color:#2f6967}
+    .top-note{background:linear-gradient(90deg,#a8e6df,#8fd3cd 55%,#a8e6df);color:var(--deep)}
+    .top-note span{background:var(--deep-2)}
+    /* --- FAQ on light gel --- */
+    .faq-list{border-top-color:rgba(22,71,73,.16)}
+    .faq-item{border-bottom-color:rgba(22,71,73,.16)}
+    .faq-question{color:var(--deep)}
+    .faq-question span{border-color:rgba(22,71,73,.28)}
+    .faq-question[aria-expanded="true"] span{background:var(--deep);color:#fff}
+    .faq-answer p{color:#41696b}
+    /* --- Smart guide result: bright turquoise gel instead of dark teal --- */
+    .guide-result{background:linear-gradient(155deg,#c2f2ea,#74ccc2 58%,#4cb3aa);color:var(--deep);box-shadow:0 24px 50px rgba(23,110,104,.28),inset 0 1px 0 rgba(255,255,255,.75),inset 0 -24px 44px rgba(23,110,104,.16)}
+    .guide-result small{color:#14504c}
+    .guide-result p{color:#17403d}
+    .guide-result a{color:#0d4a47;text-decoration:underline;text-underline-offset:3px}
+    /* --- Experience cards: gel tints, photo card brightened --- */
+    .experience-card:nth-child(2){background:linear-gradient(160deg,#c9f0ec,#8fd3cd)}
+    .experience-card.visual{background:linear-gradient(rgba(10,80,88,.30),rgba(10,80,88,.44)),url('assets/dental-treatment-room.jpg') center/cover}
+    .image-caption{background:linear-gradient(165deg,rgba(255,255,255,.88),rgba(255,255,255,.68));color:var(--deep);box-shadow:inset 0 1px 0 #fff,0 14px 30px rgba(7,63,71,.16)}
+    /* --- Footer: pale gel instead of near-black --- */
+    footer{background:linear-gradient(170deg,#e6f6f3,#cfeeea 70%,#e2f4f1);color:var(--ink)}
+    footer h3{color:var(--deep-2)}
+    .footer-links{color:#2c5558}
+    .todo-contact{color:#527a78}
+    .footer-brand p{color:#527a78}
+    .footer-bottom{border-top-color:rgba(22,71,73,.15);color:#527a78}
+    .footer-brand .brand{background:rgba(255,255,255,.85);box-shadow:0 10px 24px rgba(7,63,71,.12),inset 0 1px 0 #fff}
+    /* --- Jelly buttons: brighter gel gradient, springy squish --- */
+    .btn{transition:transform .45s cubic-bezier(.34,1.8,.5,1),box-shadow .3s ease,background .3s ease}
+    .btn-primary{background:radial-gradient(120% 90% at 50% 0%,rgba(255,255,255,.5),transparent 55%),linear-gradient(165deg,#45bcb2,#1f8a81 60%,#177267);background-size:100% 100%,180% 180%;animation:heroPan 9s ease-in-out infinite alternate;box-shadow:0 16px 32px rgba(23,114,103,.30),0 4px 10px rgba(23,114,103,.18),inset 0 2px 0 rgba(255,255,255,.55),inset 0 -4px 8px rgba(9,80,73,.28)}
+    .btn-primary:hover{transform:translateY(-3px) scale(1.045,.96)}
+    .btn-primary:active{transform:translateY(1px) scale(.95,1.03)}
+    .guide-option{transition:transform .4s cubic-bezier(.34,1.8,.5,1),background .25s ease,box-shadow .25s ease}
+    .guide-option:hover{transform:translateY(-2px) scale(1.05,.95)}
+    .guide-option:active{transform:scale(.94,1.04)}
+    /* --- Gel cards: rounder, juicier gradients, bouncy hover --- */
+    .service-card,.review-card,.experience-card,.form-card,.location-card,.smart-guide{border-radius:32px}
+    .service-card,.review-card,.form-card,.location-card{background:radial-gradient(130% 70% at 50% 0%,rgba(255,255,255,1),transparent 60%),linear-gradient(168deg,rgba(255,255,255,.98),rgba(233,248,245,.88));transition:transform .5s cubic-bezier(.34,1.65,.5,1),box-shadow .35s ease,border-color .3s ease}
+    .service-card:hover{transform:translateY(-9px) scale(1.018,.995)}
+    .review-card:hover{transform:translateY(-7px) scale(1.015,.995)}
+    .review-card:nth-child(2):hover{transform:translateY(15px) scale(1.015,.995)}
+    .experience-card{transition:transform .5s cubic-bezier(.34,1.65,.5,1),box-shadow .35s ease}
+    .experience-card:hover{transform:translateY(-6px) scale(1.02,.99)}
+    .service-icon{border-radius:16px;background:radial-gradient(120% 90% at 50% 0%,#ffffff,transparent 60%),linear-gradient(150deg,#eafaf8,#b8e6e0)}
+    .service-card:hover .service-icon{animation:jelly .7s ease}
+    @keyframes jelly{0%{transform:scale(1,1)}25%{transform:scale(1.18,.82)}50%{transform:scale(.88,1.12)}72%{transform:scale(1.06,.95)}100%{transform:scale(1,1)}}
+    /* --- Hero gel: brighter card, jelly crystal, bubblier orbs --- */
+    .hero-card{background:linear-gradient(150deg,#e2faf6,#8fe0da 42%,#3fb3ac 78%,#25a39b);background-size:190% 190%}
+    .crystal{animation:gelFloat 6s ease-in-out infinite}
+    @keyframes gelFloat{0%,100%{transform:translateY(0) scale(1,1)}30%{transform:translateY(-12px) scale(.985,1.015)}55%{transform:translateY(-4px) scale(1.012,.988)}75%{transform:translateY(-14px) scale(.99,1.01)}}
+    .orb{box-shadow:inset 0 2px 6px rgba(255,255,255,.8),inset 0 -8px 14px rgba(23,110,104,.14),0 12px 26px rgba(23,110,104,.12)}
+    .map-pin{background:linear-gradient(160deg,#3fbdb2,#177267);animation:gelFloat 5.5s ease-in-out infinite}
+    .map-placeholder{background-color:#e6f6f3}
   </style>
 </head>
 <body>
