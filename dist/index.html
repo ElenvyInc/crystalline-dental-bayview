@@ -354,7 +354,7 @@
 
     /* ==== Stats band layer (2026-10-12): count-up figures, Dental Boutique-style layout
        in Crystalline's own glass design. Figures: Vaughan practice public data. ==== */
-    .stats-section{padding:34px 0 6px}
+    .stats-section{position:relative;z-index:1;padding:28px 0 2px}
     .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .stat-card{display:flex;align-items:center;gap:24px;padding:30px 32px;border:1px solid #a9ccc9;border-radius:28px;background:radial-gradient(130% 80% at 50% 0%,rgba(255,255,255,1),transparent 60%),linear-gradient(168deg,rgba(255,255,255,.98),rgba(233,248,245,.9));box-shadow:0 18px 40px rgba(9,58,64,.10),inset 0 1px 0 #fff}
     .stat-num{font:500 clamp(2.7rem,4.6vw,4rem)/1 "DM Sans",sans-serif;letter-spacing:-.04em;color:var(--deep);white-space:nowrap}
@@ -442,15 +442,6 @@
           <div class="floating-note"><strong>Bayview Village</strong><span>Second location · Exact opening date and address coming soon.</span></div>
         </div>
       </div>
-      <div class="shell trust">
-        <div class="trust-inner">
-          <div class="trust-item trust-intro"><div><strong>Built around a better visit</strong><span>Clear, calm and considered from the first hello.</span></div></div>
-          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 5 6v5c0 4.7 2.7 8.3 7 10 4.3-1.7 7-5.3 7-10V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg><div><strong>Patient-first</strong><span>Time for questions and clear next steps.</span></div></div>
-          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 1.6 4.3L18 9l-4.4 1.7L12 15l-1.6-4.3L6 9l4.4-1.7L12 3Z"></path><path d="m18.5 15 .7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z"></path></svg><div><strong>Smart guidance</strong><span>A dynamic guide to help plan your visit.</span></div></div>
-          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 18 18 5M6 5h5v5M13 14h5v5"></path></svg><div><strong>Conveniently local</strong><span>Coming to Bayview Village, North York.</span></div></div>
-        </div>
-      </div>
-    </section>
     <section class="stats-section" aria-label="Crystalline Dental practice figures">
       <div class="shell">
         <div class="stats-grid">
@@ -459,6 +450,15 @@
           <div class="stat-card reveal"><span class="stat-num" data-count="4500" data-suffix="+">4,500+</span><span class="stat-label">Implants completed · Bayview Village</span></div>
         </div>
         <p class="stats-note">Placeholder figures for the Bayview Village concept — for design purposes only, to be replaced with the clinic's real numbers before launch.</p>
+      </div>
+    </section>
+      <div class="shell trust">
+        <div class="trust-inner">
+          <div class="trust-item trust-intro"><div><strong>Built around a better visit</strong><span>Clear, calm and considered from the first hello.</span></div></div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 5 6v5c0 4.7 2.7 8.3 7 10 4.3-1.7 7-5.3 7-10V6l-7-3Z"></path><path d="m9 12 2 2 4-4"></path></svg><div><strong>Patient-first</strong><span>Time for questions and clear next steps.</span></div></div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 1.6 4.3L18 9l-4.4 1.7L12 15l-1.6-4.3L6 9l4.4-1.7L12 3Z"></path><path d="m18.5 15 .7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z"></path></svg><div><strong>Smart guidance</strong><span>A dynamic guide to help plan your visit.</span></div></div>
+          <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 18 18 5M6 5h5v5M13 14h5v5"></path></svg><div><strong>Conveniently local</strong><span>Coming to Bayview Village, North York.</span></div></div>
+        </div>
       </div>
     </section>
     <section class="section" id="services">
